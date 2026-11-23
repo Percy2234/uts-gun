@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bgweyt60d13n0"]
+
+[ext_resource type="Script" uid="uid://b25nxr5poja1v" path="res://city_generator.gd" id="1_t6lng"]
+[ext_resource type="Script" uid="uid://bqfo5fb3shyx3" path="res://camera_3d.gd" id="2_4cvuw"]
+
+[node name="Node3D" type="Node3D" unique_id=385399734]
+transform = Transform3D(1, 0, 0, 0, 0.7306726, -0.682728, 0, 0.682728, 0.7306726, 0, 4.856208, 3.2548385)
+metadata/_edit_group_ = true
+
+[node name="CityGenerator" type="Node3D" parent="." unique_id=215954000]
+script = ExtResource("1_t6lng")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=597010974]
+transform = Transform3D(1, 0, 0, 0, 0.8230033, 0.56803674, 0, -0.56803674, 0.8230033, 16.625544, 9.94515, 12.121445)
+script = ExtResource("2_4cvuw")
