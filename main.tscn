@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://ctju1qeu2jy3e"]
+
+[ext_resource type="Script" uid="uid://b8xm8gcn3uy0n" path="res://main.gd" id="1_h2yge"]
+[ext_resource type="PackedScene" uid="uid://opbj66ud3j7o" path="res://player.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://c2s5bi517afd8" path="res://wall.tscn" id="2_0xm2m"]
+
+[node name="main" type="Node2D" unique_id=622930990]
+script = ExtResource("1_h2yge")
+
+[node name="Player1" parent="." unique_id=1491575207 instance=ExtResource("1_ig7tw")]
+position = Vector2(200, 300)
+
+[node name="Player2" parent="." unique_id=187949939 instance=ExtResource("1_ig7tw")]
+position = Vector2(900, 300)
+player_id = 2
+
+[node name="ColorRect" parent="Player2" index="0" unique_id=1739749927]
+color = Color(0.99, 0.029699972, 0.029699972, 0.9764706)
+
+[node name="Wall" parent="." unique_id=1055891454 instance=ExtResource("2_0xm2m")]
+position = Vector2(450, 200)
+
+[node name="Wall2" parent="." unique_id=1351150916 instance=ExtResource("2_0xm2m")]
+position = Vector2(450, 400)
+
+[node name="Wall3" parent="." unique_id=1159553075 instance=ExtResource("2_0xm2m")]
+position = Vector2(550, 300)
+
+[node name="Wall4" parent="." unique_id=407934043 instance=ExtResource("2_0xm2m")]
+position = Vector2(650, 200)
+
+[node name="Wall5" parent="." unique_id=155983190 instance=ExtResource("2_0xm2m")]
+position = Vector2(650, 400)
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=1553083141]
+
+[node name="Label" type="Label" parent="UI" unique_id=1870369735]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[editable path="Player2"]
